@@ -1,48 +1,104 @@
-# Leonardo Bobadilha — Data & Analytics
+<!-- Portfolio repository: public-facing overview -->
+<div align="center">
+  <img src="./assets/social-preview.png" alt="Leonardo Bobadilha — Data & Analytics portfolio cover" width="940">
+  <h1>Leonardo Bobadilha · Data &amp; Analytics</h1>
+  <p><strong>Independent work in data engineering, business intelligence and quantitative research.</strong></p>
+  <p>A curated collection of projects focused on reliable data, transparent methods and useful visual experiences.</p>
+  <p>
+    <a href="https://leobobadilha.github.io/"><strong>Explore the portfolio</strong></a>
+    &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/leonardobobadilha/">LinkedIn</a>
+    &nbsp;·&nbsp; <a href="https://github.com/LeoBobadilha">GitHub profile</a>
+  </p>
+</div>
 
-A standalone, static portfolio hub for three independent projects. Designed to present completed work rather than a job-search pitch.
+---
 
-## Live projects
+## Selected projects
 
-| Project | Website | Source |
-| --- | --- | --- |
-| Workforce Analytics | https://leobobadilha.github.io/workforce-analytics-portfolio/ | https://github.com/LeoBobadilha/workforce-analytics-portfolio |
-| Brazil Fixed Income Lab | https://leobobadilha.github.io/brazil-fixed-income-lab/ | Private; intentionally not linked on the public page |
-| Project Vortex | https://leobobadilha.github.io/project-vortex-portfolio/ | https://github.com/LeoBobadilha/project-vortex-portfolio |
+### 01 / Workforce Analytics
 
-Professional profile: https://www.linkedin.com/in/leonardobobadilha/
+**HR data integration · Business intelligence · Interactive reporting**
 
-## Architecture
+An end-to-end analytics experience combining three simulated HR data sources into a consistent workforce model. It includes validated metrics, six reporting dashboards, a geographic workforce explorer and documented data-quality checks.
 
-- HTML + CSS + vanilla JavaScript; no bundler, paid services, API keys or trackers.
-- 3D-effect hero built with CSS transforms; no additional graphics library or WebGL requirement.
-- Responsive, semantic page with keyboard-friendly links, skip navigation and reduced-motion support.
-- Decorative visualisations within the project cards are **illustrative designs, not live data or screenshots**. The actual project websites host the real interactive reports and figures.
-- The Brazil Fixed Income Lab source repo is private, so there is **no public repo link** in its card.
-- Outbound links open in a new tab with `noopener noreferrer`.
+**Focus:** Data integration, KPI definitions, reconciliation, interactive visualisation  
+**Highlights:** Synthetic data · Python · JavaScript · Three.js
 
-## Run locally
+[**Explore live project**](https://leobobadilha.github.io/workforce-analytics-portfolio/) · [View source repository](https://github.com/LeoBobadilha/workforce-analytics-portfolio)
 
-From this directory:
+### 02 / Brazil Fixed Income Lab
 
-```sh
+**Government bonds · Pricing research · Data engineering**
+
+An interactive research platform for Brazilian government bonds. An official-data pipeline powers bond exploration, mark-to-market scenarios, duration analysis, Renda+ simulations and macroeconomic context.
+
+**Focus:** Data pipelines, pricing methodologies, data validation, financial analytics  
+**Highlights:** Python · DuckDB · React · TypeScript · ECharts
+
+[**Explore live project**](https://leobobadilha.github.io/brazil-fixed-income-lab/) · *The implementation repository is private.*
+
+### 03 / Project Vortex
+
+**Quantitative research · Systematic backtesting · Research communication**
+
+A public-facing summary of research into rule-based price-action strategies. It presents historical experiments, costs, risk measures and a selected backtest benchmark while keeping the underlying trading system separate.
+
+**Focus:** Research methodology, historical simulation, risk analysis, evidence presentation  
+**Highlights:** Backtesting · Performance analytics · Data visualisation
+
+[**Explore live project**](https://leobobadilha.github.io/project-vortex-portfolio/) · [View portfolio repository](https://github.com/LeoBobadilha/project-vortex-portfolio)
+
+> **Research context:** Workforce Analytics uses synthetic records. The fixed-income tools include hypothetical financial scenarios. Project Vortex reports historical backtests, not verified live trading performance. None of these projects should be interpreted as financial advice.
+
+---
+
+## About this collection
+
+I work with **SQL Server, Python, SSIS and Power BI** in business intelligence and data workflows, including transformation, validation, troubleshooting and reporting. These independent projects let me explore the same engineering principles across different domains: people analytics, fixed income and systematic trading research.
+
+The website is intentionally a **project index**, not a recruitment page or a substitute for the more detailed project repositories.
+
+## How the website is built
+
+| Area | Implementation |
+| --- | --- |
+| Front end | Semantic HTML, custom CSS and vanilla JavaScript |
+| Visual design | Responsive layouts, CSS-based 3D scene and motion-aware interactions |
+| Deployment | GitHub Pages, served from `main` / repository root |
+| Dependencies | No framework, bundler, application backend or paid API |
+| Quality checks | Built-in Node.js checks for page structure, required assets and link integrity |
+
+The project previews on the landing page are **illustrative artwork**, not live datasets or screenshots. Follow the project links to explore the actual reports and research.
+
+### Project structure
+
+```text
+.
+├── .github/workflows/    # Lightweight website quality checks
+├── assets/               # Brand, favicon and social sharing artwork
+├── docs/                 # Maintenance and publishing guidance
+├── scripts/              # Dependency-free static checks
+├── index.html            # Page content and project links
+├── styles.css            # Visual design, layout and 3D effects
+├── main.js               # Client-side interactions
+└── README.md
+```
+
+### Run locally
+
+```bash
 python -m http.server 8000
 ```
 
-Then visit http://localhost:8000. Directly opening `index.html` also works.
+Open [http://localhost:8000](http://localhost:8000). To run the automated checks (Node.js 20+):
 
-## Publish to GitHub Pages (recommended)
+```bash
+node --check main.js
+node scripts/check-site.mjs
+```
 
-For a free GitHub account, create a **public** repository named `LeoBobadilha.github.io` (capitalization is not relevant to the hostname). Its site will use `https://leobobadilha.github.io/`, a short professional URL that sits naturally above the three project sites. GitHub Pages from a **private** repository requires GitHub Pro/Team/Enterprise. A private repository does not make the resulting website private.
+Changes to `main` are published with GitHub Pages. For editing instructions, deployment notes and content safeguards, see [the maintenance guide](docs/MAINTENANCE.md).
 
-The `publish.ps1` script can initialize and publish the repository once you have Git, GitHub CLI (`gh`) and a GitHub CLI session (`gh auth login`). It verifies your GitHub identity and asks before creating or pushing.
+---
 
-Alternatively, create the repository through https://github.com/new and upload all files from this folder to the root of the repository. Then configure **Settings → Pages → Build and deployment → Deploy from a branch → main / (root)**. If the site doesn't appear, confirm that Pages is enabled and a deployment has completed.
-
-## Content maintenance
-
-Project summaries, outbound links, headline and toolkit are in `index.html` and can be edited without rebuilding. Update project details when the live sites change. Review the `og:image` metadata on publication: social-preview.svg is a fallback; social preview services may prefer a PNG.
-
-## Privacy & risk notes
-
-Do not add credentials, personal trade ledgers or private research files to the published repository. The Project Vortex portfolio is a research/backtest showcase; its page does not claim actual live trading results. External financial figures or project performance metrics should be sourced on their own project sites, not invented here.
+<sub>© 2026 Leonardo Bobadilha · [Portfolio](https://leobobadilha.github.io/) · [LinkedIn](https://www.linkedin.com/in/leonardobobadilha/)</sub>
