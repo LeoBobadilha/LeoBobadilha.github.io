@@ -9,3 +9,4 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.can-reveal{opacity:1;transform:none}.scene{transform:none!important}}
 
 @media(max-width:620px){.orbital-a{width:380px;height:380px;margin:-190px}.card-right{right:14px}}
+.project-shot{display:block;width:calc(100% - 28px);height:auto;margin:48px auto 14px;border:1px solid rgba(169,218,215,.16);border-radius:8px}

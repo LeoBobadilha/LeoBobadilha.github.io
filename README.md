@@ -30,12 +30,12 @@ An end-to-end analytics experience combining three simulated HR data sources int
 
 **Government bonds · Pricing research · Data engineering**
 
-An interactive research platform for Brazilian government bonds. An official-data pipeline powers bond exploration, mark-to-market scenarios, duration analysis, Renda+ simulations and macroeconomic context.
+A financial data engineering and analytics project on Brazilian government bonds. An official-data pipeline feeds a pricing engine reconciled against published prices, and powers bond exploration, mark-to-market scenarios, duration analysis, Renda+ simulations and macroeconomic research.
 
 **Focus:** Data pipelines, pricing methodologies, data validation, financial analytics  
 **Highlights:** Python · DuckDB · React · TypeScript · ECharts
 
-[**Explore live project**](https://leobobadilha.github.io/brazil-fixed-income-lab/) · *The implementation repository is private.*
+[**Explore live project**](https://leobobadilha.github.io/brazil-fixed-income-lab/) · [View source repository](https://github.com/LeoBobadilha/brazil-fixed-income-lab-portfolio)
 
 ### 03 / Project Vortex
 
