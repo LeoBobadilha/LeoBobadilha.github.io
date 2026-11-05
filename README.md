@@ -1,14 +1,14 @@
 <!-- Portfolio repository: public-facing overview -->
 <div align="center">
   <img src="./assets/social-preview.png" alt="Leonardo Bobadilha — Data & Analytics portfolio cover" width="940">
-
-  # Leonardo Bobadilha · Data & Analytics
-
-  **Independent work in data engineering, business intelligence and quantitative research.**
-
-  A curated collection of projects focused on reliable data, transparent methods and useful visual experiences.
-
-  **[Explore the portfolio](https://leobobadilha.github.io/)** &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/leonardobobadilha/) &nbsp;·&nbsp; [GitHub profile](https://github.com/LeoBobadilha)
+  <h1>Leonardo Bobadilha · Data &amp; Analytics</h1>
+  <p><strong>Independent work in data engineering, business intelligence and quantitative research.</strong></p>
+  <p>A curated collection of projects focused on reliable data, transparent methods and useful visual experiences.</p>
+  <p>
+    <a href="https://leobobadilha.github.io/"><strong>Explore the portfolio</strong></a>
+    &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/leonardobobadilha/">LinkedIn</a>
+    &nbsp;·&nbsp; <a href="https://github.com/LeoBobadilha">GitHub profile</a>
+  </p>
 </div>
 
 ---
