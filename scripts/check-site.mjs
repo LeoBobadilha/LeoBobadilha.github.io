@@ -53,7 +53,7 @@ for (const anchor of anchors) {
 const expectedLinks = [
   "https://leobobadilha.github.io/workforce-analytics-portfolio/",
   "https://leobobadilha.github.io/brazil-fixed-income-lab/",
-  "https://leobobadilha.github.io/project-vortex-portfolio/",
+  "https://leobobadilha.github.io/project-vortex-research/",
   "https://www.linkedin.com/in/leonardobobadilha/",
 ];
 for (const link of expectedLinks) {
@@ -62,4 +62,6 @@ for (const link of expectedLinks) {
 
 assert.ok(!destinations.includes("https://github.com/LeoBobadilha/brazil-fixed-income-lab"),
   "Do not link visitors to the private fixed-income repository");
+assert.ok(!destinations.some((href) => /project-vortex-(portfolio|bi-showcase)/.test(href)),
+  "Link Project Vortex to project-vortex-research, not the retired repositories");
 console.log(`Website checks passed: ${requiredFiles.length} files, ${ids.length} unique IDs, ${anchors.length} links.`);

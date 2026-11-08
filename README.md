@@ -46,7 +46,7 @@ A public-facing summary of research into rule-based price-action strategies. It 
 **Focus:** Research methodology, historical simulation, risk analysis, evidence presentation  
 **Highlights:** Backtesting · Performance analytics · Data visualisation
 
-[**Explore live project**](https://leobobadilha.github.io/project-vortex-portfolio/) · [View portfolio repository](https://github.com/LeoBobadilha/project-vortex-portfolio)
+[**Explore live project**](https://leobobadilha.github.io/project-vortex-research/) · [View repository](https://github.com/LeoBobadilha/project-vortex-research)
 
 > **Research context:** Workforce Analytics uses synthetic records. The fixed-income tools include hypothetical financial scenarios. Project Vortex reports historical backtests, not verified live trading performance. None of these projects should be interpreted as financial advice.
 
